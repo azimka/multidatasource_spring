@@ -9,3 +9,15 @@ spring:
     data-username: sa
     password:
     driver-class-name: org.h2.Driver
+
+  db-profile-service:
+    url: jdbc:h2:file:~/dbProfileService
+    data-username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  db-task-service:
+    url: jdbc:h2:file:~/dbTaskService
+    data-username: sa
+    password:
+    driver-class-name: org.h2.Driver
