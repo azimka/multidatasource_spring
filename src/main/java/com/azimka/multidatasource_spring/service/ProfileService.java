@@ -10,7 +10,7 @@ public class ProfileService {
     @Autowired
     private ProfileRepository profileRepository;
 
-    public String getProfileCount(){
-        return profileRepository.getProfileCount();
+    public String getProfileDBInfo(){
+        return profileRepository.getProfileDBInfo();
     }
 }

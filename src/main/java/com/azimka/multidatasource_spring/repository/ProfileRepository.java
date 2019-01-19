@@ -8,11 +8,13 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class ProfileRepository {
 
+    private static final String PROFILE_REQUEST_RESULT_STUB = "Profile stub request result";
+
     @Qualifier("profileJDBCTemplate")
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public String getProfileCount() {
-        return "77";
+    public String getProfileDBInfo() {
+        return PROFILE_REQUEST_RESULT_STUB;
     }
 }

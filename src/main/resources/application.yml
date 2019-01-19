@@ -4,12 +4,6 @@ spring:
       enabled: true
       path: /h2-ds
 
-  datasource:
-    url: jdbc:h2:file:~/multidatasource
-    data-username: sa
-    password:
-    driver-class-name: org.h2.Driver
-
   db-profile-service:
     url: jdbc:h2:file:~/dbProfileService
     data-username: sa

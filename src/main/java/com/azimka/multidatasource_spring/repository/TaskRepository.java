@@ -8,12 +8,13 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class TaskRepository {
 
-    @Autowired
+    private static final String TASK_REQUEST_STUB_RESULT = "task request stub";
+
     @Qualifier("taskJDBCTemplate")
+    @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public String getTaskCount() {
-        return "99";
+    public String getTaskDBInfo() {
+        return TASK_REQUEST_STUB_RESULT;
     }
-
 }

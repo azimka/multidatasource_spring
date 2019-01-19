@@ -10,7 +10,7 @@ public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
 
-    public String getTaskCount() {
-        return taskRepository.getTaskCount();
+    public String getTaskDBInfo() {
+        return taskRepository.getTaskDBInfo();
     }
 }

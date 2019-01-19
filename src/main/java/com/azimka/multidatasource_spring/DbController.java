@@ -1,6 +1,5 @@
 package com.azimka.multidatasource_spring;
 
-import com.azimka.multidatasource_spring.repository.ProfileRepository;
 import com.azimka.multidatasource_spring.service.ProfileService;
 import com.azimka.multidatasource_spring.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +15,13 @@ public class DbController {
     @Autowired
     private TaskService taskService;
 
-    @RequestMapping("/usercount")
-    public String getUserCount() {
-        return profileService.getProfileCount();
+    @RequestMapping("/userdbInfo")
+    public String getProfileDBInfo() {
+        return profileService.getProfileDBInfo();
     }
 
-    @RequestMapping("/taskcount")
-    public String getTaskCount() {
-        return taskService.getTaskCount();
+    @RequestMapping("/taskdbinfo")
+    public String getTaskDBInfo() {
+        return taskService.getTaskDBInfo();
     }
 }
